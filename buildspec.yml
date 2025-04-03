@@ -1,0 +1,16 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+        nodejs: 14
+  build:
+    commands:
+      - npm ci
+      # - zip -r9 ./deploy.zip .
+      - npm install -g serverless@3.34.0
+  post_build:
+    commands:
+      - echo "Updating lambda Function..."
+      - sls deploy --stage $stage
+      # - aws lambda update-function-code --function-name aws-sls-employee-api-dev-api --zip-file fileb://deploy.zip
+      - echo "DONE!!"
