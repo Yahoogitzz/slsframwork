@@ -15,6 +15,10 @@ phases:
       # - aws lambda update-function-code --function-name aws-sls-employee-api-dev-api --zip-file fileb://deploy.zip
       - echo "DONE!!"
 
+artifacts:
+  files:
+    - '**/*'
+
 # version: 0.2
 # phases:
 #   install:
