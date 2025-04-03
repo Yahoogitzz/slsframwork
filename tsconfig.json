@@ -8,7 +8,10 @@
     "removeComments": true,
     "sourceMap": true,
     "target": "ES2020",
-    "outDir": "lib"
+    "outDir": "lib",
+    "skipLibCheck": true,                     // Skip type checking of declaration files to avoid recursion
+    "maxNodeModuleJsDepth": 10,               // Increase depth for module resolution
+    "strict": false                           // Optionally, set strict to false for debugging (adjust as needed)
   },
   "include": ["src/**/*.ts", "serverless.ts"],
   "exclude": [
