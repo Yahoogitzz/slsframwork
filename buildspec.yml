@@ -15,8 +15,7 @@
 #       # - aws lambda update-function-code --function-name aws-sls-employee-api-dev-api --zip-file fileb://deploy.zip
 #       - echo "DONE!!"
 
-      version: 0.2
-
+version: 0.2
 phases:
   install:
     runtime-versions:
