@@ -180,7 +180,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/my-api-service/dev/1743925436830-2025-04-06T07:43:56.830Z/my-api-service.zip"
+          "S3Key": "serverless/my-api-service/dev/1743927260214-2025-04-06T08:14:20.214Z/my-api-service.zip"
         },
         "Handler": "handler.create",
         "Runtime": "nodejs16.x",
@@ -210,7 +210,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/my-api-service/dev/1743925436830-2025-04-06T07:43:56.830Z/my-api-service.zip"
+          "S3Key": "serverless/my-api-service/dev/1743927260214-2025-04-06T08:14:20.214Z/my-api-service.zip"
         },
         "Handler": "handler.read",
         "Runtime": "nodejs16.x",
@@ -240,7 +240,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/my-api-service/dev/1743925436830-2025-04-06T07:43:56.830Z/my-api-service.zip"
+          "S3Key": "serverless/my-api-service/dev/1743927260214-2025-04-06T08:14:20.214Z/my-api-service.zip"
         },
         "Handler": "handler.update",
         "Runtime": "nodejs16.x",
@@ -270,7 +270,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/my-api-service/dev/1743925436830-2025-04-06T07:43:56.830Z/my-api-service.zip"
+          "S3Key": "serverless/my-api-service/dev/1743927260214-2025-04-06T08:14:20.214Z/my-api-service.zip"
         },
         "Handler": "handler.delete",
         "Runtime": "nodejs16.x",
@@ -293,44 +293,44 @@
         "DeleteLogGroup"
       ]
     },
-    "CreateLambdaVersionaee3GeM07f20GYbiFBEveaUMWysk0cuD0mGpz0z2rdI": {
+    "CreateLambdaVersionIDc1sfqvmLWMGMQqhRFEeK6mvAxZR0Bi3L5AeaJXaQ": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "CreateLambdaFunction"
         },
-        "CodeSha256": "sjNzrctr4qMmFC6CtOnJOy9j/E/uVqg8i/Hhkf1iEjw="
+        "CodeSha256": "wAPObDTZ6tS2YgAuZpYCeLVGZ5GnW0veARjkjrgwMsI="
       }
     },
-    "ReadLambdaVersionXvxetUiVWx3ZM05mf72xoJqEb2kt1yomvQhHagBzj0": {
+    "ReadLambdaVersionIqlOycwZevxstqEGuOVicM1UtyXP7kUT8jVxnKTbTo": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "ReadLambdaFunction"
         },
-        "CodeSha256": "sjNzrctr4qMmFC6CtOnJOy9j/E/uVqg8i/Hhkf1iEjw="
+        "CodeSha256": "wAPObDTZ6tS2YgAuZpYCeLVGZ5GnW0veARjkjrgwMsI="
       }
     },
-    "UpdateLambdaVersionCm5Yfe8hjAv2UGdhCCvATj7g6c6HOJNpIUOvveluqI": {
+    "UpdateLambdaVersionCuDhufoSHQW1RlX9aiFOBz6Z6BbJGrBUSQAXwuF5CM": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "UpdateLambdaFunction"
         },
-        "CodeSha256": "sjNzrctr4qMmFC6CtOnJOy9j/E/uVqg8i/Hhkf1iEjw="
+        "CodeSha256": "wAPObDTZ6tS2YgAuZpYCeLVGZ5GnW0veARjkjrgwMsI="
       }
     },
-    "DeleteLambdaVersionHjzyj3yiGTUZ3T96HdFQpfuuj9EqD4vuKLJb7T6ls": {
+    "DeleteLambdaVersionV0FRfaFeaHiI9KaFbNWeJxiDObOvZSmJp69H2nWBRg": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "DeleteLambdaFunction"
         },
-        "CodeSha256": "sjNzrctr4qMmFC6CtOnJOy9j/E/uVqg8i/Hhkf1iEjw="
+        "CodeSha256": "wAPObDTZ6tS2YgAuZpYCeLVGZ5GnW0veARjkjrgwMsI="
       }
     },
     "ApiGatewayRestApi": {
@@ -646,7 +646,7 @@
         "DeleteLambdaPermissionApiGateway"
       ]
     },
-    "ApiGatewayDeployment1743925435244": {
+    "ApiGatewayDeployment1743927258375": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -846,7 +846,7 @@
     "CreateLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "CreateLambdaVersionaee3GeM07f20GYbiFBEveaUMWysk0cuD0mGpz0z2rdI"
+        "Ref": "CreateLambdaVersionIDc1sfqvmLWMGMQqhRFEeK6mvAxZR0Bi3L5AeaJXaQ"
       },
       "Export": {
         "Name": "sls-my-api-service-dev-CreateLambdaFunctionQualifiedArn"
@@ -855,7 +855,7 @@
     "ReadLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "ReadLambdaVersionXvxetUiVWx3ZM05mf72xoJqEb2kt1yomvQhHagBzj0"
+        "Ref": "ReadLambdaVersionIqlOycwZevxstqEGuOVicM1UtyXP7kUT8jVxnKTbTo"
       },
       "Export": {
         "Name": "sls-my-api-service-dev-ReadLambdaFunctionQualifiedArn"
@@ -864,7 +864,7 @@
     "UpdateLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "UpdateLambdaVersionCm5Yfe8hjAv2UGdhCCvATj7g6c6HOJNpIUOvveluqI"
+        "Ref": "UpdateLambdaVersionCuDhufoSHQW1RlX9aiFOBz6Z6BbJGrBUSQAXwuF5CM"
       },
       "Export": {
         "Name": "sls-my-api-service-dev-UpdateLambdaFunctionQualifiedArn"
@@ -873,7 +873,7 @@
     "DeleteLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "DeleteLambdaVersionHjzyj3yiGTUZ3T96HdFQpfuuj9EqD4vuKLJb7T6ls"
+        "Ref": "DeleteLambdaVersionV0FRfaFeaHiI9KaFbNWeJxiDObOvZSmJp69H2nWBRg"
       },
       "Export": {
         "Name": "sls-my-api-service-dev-DeleteLambdaFunctionQualifiedArn"

@@ -16,8 +16,9 @@ phases:
     commands:
       - echo "build process finished, Updating lambda Function..."
       - echo "Updating lambda Function..."
-      - sls deploy --stage $stage
-      - echo "DONE!!"
+      - echo "Deploying with stage: $stage"
+      - sls deploy --stage $stage --verbose
+      - echo "Deployment is DONE!!"
 artifacts:
   files:
     - "**/*"
