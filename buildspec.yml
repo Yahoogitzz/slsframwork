@@ -5,15 +5,15 @@ phases:
     runtime-versions:
       nodejs: 14
       commands:
-        - echo install process started
+        - echo "install process started"
         - npm install -g serverless@3.34.0
   build:
     commands:
-      - echo build process started
+      - echo "build process started"
       - npm ci
   post_build:
     commands:
-      - echo build process finished, Updating lambda Function...
+      - echo "build process finished, Updating lambda Function..."
       - echo "Updating lambda Function..."
       - sls deploy --stage $stage
       - echo "DONE!!"
