@@ -180,7 +180,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/my-api-service/dev/1743932491198-2025-04-06T09:41:31.198Z/my-api-service.zip"
+          "S3Key": "serverless/my-api-service/dev/1743932872765-2025-04-06T09:47:52.765Z/my-api-service.zip"
         },
         "Handler": "handler.create",
         "Runtime": "nodejs16.x",
@@ -210,7 +210,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/my-api-service/dev/1743932491198-2025-04-06T09:41:31.198Z/my-api-service.zip"
+          "S3Key": "serverless/my-api-service/dev/1743932872765-2025-04-06T09:47:52.765Z/my-api-service.zip"
         },
         "Handler": "handler.read",
         "Runtime": "nodejs16.x",
@@ -240,7 +240,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/my-api-service/dev/1743932491198-2025-04-06T09:41:31.198Z/my-api-service.zip"
+          "S3Key": "serverless/my-api-service/dev/1743932872765-2025-04-06T09:47:52.765Z/my-api-service.zip"
         },
         "Handler": "handler.update",
         "Runtime": "nodejs16.x",
@@ -270,7 +270,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/my-api-service/dev/1743932491198-2025-04-06T09:41:31.198Z/my-api-service.zip"
+          "S3Key": "serverless/my-api-service/dev/1743932872765-2025-04-06T09:47:52.765Z/my-api-service.zip"
         },
         "Handler": "handler.delete",
         "Runtime": "nodejs16.x",
@@ -646,7 +646,7 @@
         "DeleteLambdaPermissionApiGateway"
       ]
     },
-    "ApiGatewayDeployment1743932489581": {
+    "ApiGatewayDeployment1743932871253": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
