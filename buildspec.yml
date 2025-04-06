@@ -6,11 +6,12 @@ phases:
       nodejs: 14
     commands:
       - echo "install process started"
-      - npm install -g serverless@3.34.0
+      - npm install
   build:
     commands:
       - echo "build process started"
       - npm ci
+      - npm install -g serverless@3.34.0
   post_build:
     commands:
       - echo "build process finished, Updating lambda Function..."
