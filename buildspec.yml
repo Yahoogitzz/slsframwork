@@ -20,6 +20,7 @@ phases:
 artifacts:
   files:
     - '**/*'
+      
 
 # version: 0.2
 # phases:
