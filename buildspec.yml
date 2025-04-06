@@ -4,13 +4,13 @@ phases:
   install:
     runtime-versions:
       nodejs: 14
-      commands:
-        - echo "install process started"
-        - npm install -g serverless@3.34.0
+    commands:
+      - echo "install process started"
+      - npm install -g serverless@3.34.0
   build:
     commands:
       - echo "build process started"
-      - npm run ci
+      - npm ci
   post_build:
     commands:
       - echo "build process finished, Updating lambda Function..."
@@ -21,9 +21,38 @@ artifacts:
   files:
     - "**/*"
     - dist/**/*
-    - node_modules**/*
+    - node_modules/**/*
     - package.json
     - package-lock.json
+
+
+
+# ---
+# version: 0.2
+# phases:
+#   install:
+#     runtime-versions:
+#       nodejs: 14
+#     commands:
+#         - echo "install process started"
+#         - npm install -g serverless@3.34.0
+#   build:
+#     commands:
+#       - echo "build process started"
+#       - npm run ci
+#   post_build:
+#     commands:
+#       - echo "build process finished, Updating lambda Function..."
+#       - echo "Updating lambda Function..."
+#       - sls deploy --stage $stage
+#       - echo "DONE!!"
+# artifacts:
+#   files:
+#     - "**/*"
+#     - dist/**/*
+#     - node_modules/**/*
+#     - package.json
+#     - package-lock.json
 
 
 # version: 0.2
