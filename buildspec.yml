@@ -27,8 +27,8 @@ artifacts:
     - 'node_modules**/*'
     - 'package.json'
     - 'package-lock.json'
-      
 
+      
 # version: 0.2
 # phases:
 #   install:
