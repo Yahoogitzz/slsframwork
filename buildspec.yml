@@ -4,14 +4,17 @@ phases:
     runtime-versions:
         nodejs: 14
         commands:
-          - npm install
+          - echo install process started
+          - npm install -g serverless@3.34.0
   build:
     commands:
+      - echo build process started
       - npm ci
       # - zip -r9 ./deploy.zip .
-      - npm install -g serverless@3.34.0
+      # - npm install -g serverless@3.34.0
   post_build:
     commands:
+      - echo build process finished, "Updating lambda Function..."
       - echo "Updating lambda Function..."
       - sls deploy --stage $stage
       # - aws lambda update-function-code --function-name aws-sls-employee-api-dev-api --zip-file fileb://deploy.zip
@@ -20,6 +23,10 @@ phases:
 artifacts:
   files:
     - '**/*'
+    - 'dist/**/*'
+    - 'node_modules**/*'
+    - 'package.json'
+    - 'package-lock.json'
       
 
 # version: 0.2
